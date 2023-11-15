@@ -32,7 +32,7 @@ public class AdminController {
         model.addAttribute("allRoles", roleService.findAll());
         model.addAttribute("username", principal.getName());
         model.addAttribute("role", userService.findByUsername(principal.getName()).getRoles());
-        return "welcome";
+        return "index";
     }
 
     @GetMapping()
